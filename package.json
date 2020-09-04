@@ -1,0 +1,30 @@
+{
+    "name": "fastapi-snippets",
+	"displayName": "FastAPI Snippets",
+	"description": "A collection of snippets for the Python FastAPI framework",
+    "version": "0.0.1",
+    "author": "Will Earp",
+    "keywords": [
+        "snippets",
+        "fastapi",
+        "python"
+      ],
+	"engines": {
+		"vscode": "^1.48.2"
+	},
+	"categories": [
+		"Snippets"
+	],
+    "contributes": {
+      "snippets": [
+        {
+          "language": "python",
+          "path": "./snippets.json"
+        }
+      ]
+    },
+    "repository": "https://github.com/wearp/fastapi-snippets",
+    "bugs": {
+        "url": "https://github.com/wearp/fastapi-snippets/issues"
+    }
+}
