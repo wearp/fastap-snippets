@@ -1,7 +1,7 @@
 {
-	"FastAPI App": {
-		"prefix": "fapp ",
-		"description": "Code snippet for a FastAPI app",
+    "FastAPI App": {
+        "prefix": "fapp ",
+        "description": "Code snippet for a FastAPI app",
         "body": [
             "from typing import Optional\n",
             "from fastapi import FastAPI\n",
@@ -16,8 +16,8 @@
         ]
     },
     "Async FastAPI App": {
-		"prefix": "async/fapp ",
-		"description": "Code snippet for an async FastAPI app",
+        "prefix": "async/fapp ",
+        "description": "Code snippet for an async FastAPI app",
         "body": [
             "from typing import Optional\n",
             "from fastapi import FastAPI\n",
@@ -30,5 +30,5 @@
             "\treturn {\"item_id\": item_id, \"q\": q}",
             "\n$0"
         ]
-	}
+    }
 }
