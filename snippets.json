@@ -1,7 +1,7 @@
 {
 	"FastAPI App": {
-		"prefix": "fapp",
-		"description": "Creates basic FastAPI app",
+		"prefix": "fapp ",
+		"description": "Code snippet for a FastAPI app",
         "body": [
             "from typing import Optional\n",
             "from fastapi import FastAPI\n",
@@ -11,6 +11,22 @@
             "\treturn {\"Hello\": \"World\"}\n\n",
             "@app.get(\"/items/{item_id}\")",
             "def read_item(item_id: int, q: Optional[str] = None):",
+            "\treturn {\"item_id\": item_id, \"q\": q}",
+            "\n$0"
+        ]
+    },
+    "Async FastAPI App": {
+		"prefix": "async/fapp ",
+		"description": "Code snippet for an async FastAPI app",
+        "body": [
+            "from typing import Optional\n",
+            "from fastapi import FastAPI\n",
+            "app = FastAPI()\n\n",
+            "@app.get(\"\/\")",
+            "async def read_root():",
+            "\treturn {\"Hello\": \"World\"}\n\n",
+            "@app.get(\"/items/{item_id}\")",
+            "async def read_item(item_id: int, q: Optional[str] = None):",
             "\treturn {\"item_id\": item_id, \"q\": q}",
             "\n$0"
         ]
