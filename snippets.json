@@ -1,34 +1,33 @@
 {
     "FastAPI App": {
-        "prefix": "fapp ",
+        "prefix": "fapi-app",
         "description": "Code snippet for a FastAPI app",
         "body": [
-            "from typing import Optional\n",
             "from fastapi import FastAPI\n",
             "app = FastAPI()\n\n",
             "@app.get(\"\/\")",
-            "def read_root():",
-            "\treturn {\"Hello\": \"World\"}\n\n",
-            "@app.get(\"/items/{item_id}\")",
-            "def read_item(item_id: int, q: Optional[str] = None):",
-            "\treturn {\"item_id\": item_id, \"q\": q}",
-            "\n$0"
+            "def root():",
+            "\treturn {\"message\": \"Hello World\"}\n\n\n$0",
         ]
     },
     "Async FastAPI App": {
-        "prefix": "async/fapp ",
+        "prefix": "async/fapi-app",
         "description": "Code snippet for an async FastAPI app",
         "body": [
-            "from typing import Optional\n",
             "from fastapi import FastAPI\n",
             "app = FastAPI()\n\n",
             "@app.get(\"\/\")",
-            "async def read_root():",
-            "\treturn {\"Hello\": \"World\"}\n\n",
-            "@app.get(\"/items/{item_id}\")",
-            "async def read_item(item_id: int, q: Optional[str] = None):",
-            "\treturn {\"item_id\": item_id, \"q\": q}",
-            "\n$0"
+            "async def root():",
+            "\treturn {\"message\": \"World\"}\n\n\n$0",
+        ]
+    },
+    "FastAPI Route": {
+        "prefix": "fapi-route",
+        "description": "Code snippet for a FastAPI route",
+        "body": [
+            "@${1:app}.${2|get,post,put,delete,options,head,patch,trace|}(\"\/\")",
+            "async def root():",
+            "\treturn {\"message\": \"World\"}\n\n\n$0",
         ]
     }
 }
